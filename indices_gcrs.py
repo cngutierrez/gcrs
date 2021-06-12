@@ -6,6 +6,12 @@ Created on Sat Jun 12 00:27:54 2021
 @author: christiracing
 """
 
+"""
+Este código lo que hace es abrir el .csv inmenso que se creo en el archivo "procesar_gcrs_varios_archivos.py" y agarrar los índices de los distintos meses.
+Esto se hace porque el archivo tiene más de 9 millones de filas y recorrer todas las filas cada iteración se hace eterno.
+Por lo tanto esto acorta el tiempo, si yo se el año y el mes solo voy a recorrer un mes anterior y un mes posterior para no recorrer filas innecesarias.
+"""
+
 import numpy as np
 import pandas as pd
 
